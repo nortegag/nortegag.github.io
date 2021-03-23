@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    height: 5vh;
+    font-weight: 100;
+    font-size: 11px;
+    padding-top: 1em;
+}
+
+/* home page css */
+#name {
+    /* https://www.wallpaperflare.com/landscape-photography-of-gray-concrete-ground-closeup-photo-of-field-with-blue-sky-wallpaper-zcrxp */
+    /* https://stackoverflow.com/questions/31632419/how-to-darken-a-css-background-image/31632494 */
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/salar.jpeg');
+    -webkit-background-size: cover;
+
+    /* background-color: powderblue; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+
+}
+
+#name > h1 {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    border-top: solid 3px;
+}
+
+#name > h2 {
+    color: white;
+    font-weight: 100;
+    padding-bottom: 30px;
+    border-bottom: solid 3px;
+}
+
+
+.nav_links {
+    background-color: gray;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.nav_item > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+/* portfolio CSS */
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 1px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid > div {
+    height: 2em;
+    /* width: 50vh; */
+    background-color:white;
+    text-align: center;
+    padding: 4em;
+    position: relative;
+    width: 2vh;
+    opacity: 0.9;
+}
+
+
+.grid > div > img {
+    grid-column: 1 span 1;
+    height: 5em;
+    position:absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    transform: translatey(-30%)
+
+}
+
+.project-text > p {
+    color: black;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    font-size: 1em;
+    padding: 11px;
+    transform: translatey(-30%)
+}
+
+#portfolio, #about, #contact {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/salar.jpeg');
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+}
+
+#portfolio > h1, #about > h1, #contact > h1 {
+    color: white;
+    padding: 10px;
+}
+
+/* contact page css */
+.form {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+    width: 100%;
+}
+
+.btn {
+    padding: 2px;
+}
+
+.form-control {
+    padding: 11px;
+    /* font-family: sans-serif; */
+}
+
+textarea {
+    overflow: scroll;
+}
+
+
+
+/* 
+textarea,
+input[type=text], input[type=email] {
+    font-family:Arial;
+    width: 100%;
+} */
+
+
+
+

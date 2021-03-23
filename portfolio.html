@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+
+    <title>Nicolas Ortega Portfolio Site - Portfolio Page</title>
+</head>
+
+<body>
+    <header>
+      <nav>
+        <ul class="nav_links">
+          <li class="nav_item"><a href="index.html">Home</a></li>
+          <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav_item"><a href="#about">About</a></li>
+          <li class="nav_item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="grid">
+            <!-- http://webdevjunk.com/coding/javascript/3/use-onclick-to-make-entire-div-or-other-html-object-into-a-link/ -->
+                <div class="project1" onclick="location.href='https:\/\/github.com/nortegag/amazon-fraud-detect'" style=”cursor:pointer">
+                    <img src='/images/fraud-detect.png' alt="fraud detection">
+                </div>
+                <div class="project-text" onclick="location.href='https:\/\/github.com/nortegag/amazon-fraud-detect'" style=”cursor:pointer”>
+                    <p>Amazon Fraud Detection in Customer Reviews</p>
+                </div>
+
+
+                <div class="project-text" onclick="location.href='https:\/\/github.com/nortegag/kaggle-whatscooking'" style=”cursor:pointer”> 
+                    <p>Kaggle Competition: What's Cooking?</p>
+                </div>  
+                <div class="project2" onclick="location.href='https:\/\/github.com/nortegag/kaggle-whatscooking'" style=”cursor:pointer”>
+                    <img src='/images/cooking-pot.png' alt="cooking pot">
+                </div>
+
+
+                <div class="project3" onclick="location.href='https:\/\/github.com/nortegag/SI364-FinalProject'" style=”cursor:pointer”>
+                    <img src='images/database.png' alt="database">
+                </div>
+                <div class="project-text" onclick="location.href='https:\/\/github.com/nortegag/SI364-FinalProject'" style=”cursor:pointer”>
+                    <p>Database Development Course Project</p>
+                </div>
+                
+                <div class="project-text" onclick="location.href='https:\/\/github.com/nortegag/ETL-Process'" style=”cursor:pointer”>
+                    <p>Mailchimp Data Extract, Transform, Load (ETL)</p>
+                </div>
+                <div class="project4" onclick="location.href='https:\/\/github.com/nortegag/ETL-Process'" style=”cursor:pointer”>
+                    <img src='images/network.png' alt="ETL">
+                </div>
+
+                <div class="project5" onclick="location.href='https:\/\/github.com/nortegag/SI206-FinalProject'" style=”cursor:pointer”>
+                    <img src='images/emoticons.png' alt="emoticons">
+                </div>
+                <div class="project-text" onclick="location.href='https:\/\/github.com/nortegag/SI206-FinalProject'" style=”cursor:pointer”>
+                    <p>Python Sentiment Analysis Course Project</p>
+                </div>
+        </div>
+
+
+    </main>
+
+  
+    <footer>
+        <p>University of Michigan School of Information <br/>
+            &copy; Nicolas Ortega - 2021</p>
+    </footer>
+  </body>
