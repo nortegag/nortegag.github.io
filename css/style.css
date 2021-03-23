@@ -78,6 +78,9 @@ footer {
     text-align: center;
     width: 100%;
     overflow: hidden;
+    justify-items: center;
+    align-items: center;
+
 }
 
 .grid > div {
@@ -87,7 +90,7 @@ footer {
     text-align: center;
     padding: 4em;
     position: relative;
-    width: 2vh;
+    width: 2vw;
     opacity: 0.9;
 }
 
@@ -140,27 +143,36 @@ footer {
     width: 100%;
 }
 
+.form > div {
+    padding: 10px;
+
+}
+
 .btn {
     padding: 2px;
 }
 
 .form-control {
     padding: 11px;
-    /* font-family: sans-serif; */
+    border-radius: 5px;
 }
 
-textarea {
-    overflow: scroll;
+.form-control::placeholder {
+    font-family: 'Source Sans', sans-serif;
+    font-size: 11px;
+}
+
+label {
+    display:inline-block;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 0.8em;
 }
 
 
 
-/* 
-textarea,
-input[type=text], input[type=email] {
-    font-family:Arial;
-    width: 100%;
-} */
+
+
 
 
 
