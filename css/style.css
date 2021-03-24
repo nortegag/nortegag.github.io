@@ -7,13 +7,13 @@ body {
 
 
 footer {
+    display: absolute;
     background-color: #4e4c4c;
     color: white;
     text-align: center;
     height: 5vh;
     font-weight: 100;
     font-size: 11px;
-    /* margin-top: 1em; */
     padding-top: 1em;
 }
 
@@ -223,7 +223,7 @@ label {
     flex-direction: column;
     align-items: center;
     /* justify-content: space-evenly */
-    height: 90vh;
+    height: 100vh;
 }
 
 #about > h1 {
@@ -263,21 +263,19 @@ label {
     border-bottom-right-radius: 60px;
 }
 
-#about > a > p {
-    display: flex;
-    /* margin-top: 100px; */
+#about > div > a > p {
     color: white;
     max-width: 100px;
     font-weight: 200;
-    /* transform:translateY(40px); */
+
     font-size: 0.8em;
     border: solid 1px;
     border-radius: 8px;
     padding: 10px;
     background-color: rgba(233, 113, 129, 0.7);
-    margin: 0 auto;
+
 }
 
-#about > a:link {
+#about > div > a:link {
     text-decoration: none;
 }
