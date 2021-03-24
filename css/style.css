@@ -52,7 +52,7 @@ footer {
     border-bottom: solid 3px;
 }
 
-#name > p {
+#name > a > p {
     color: white;
     font-weight: 200;
     transform:translateY(50px);
@@ -63,6 +63,10 @@ footer {
     /* background-color: rgba(230, 115, 117, 0.699); */
     background-color: #e97181a9;
     /* background-color: #5b68a5 */
+}
+
+#name > a:link {
+    text-decoration: none;
 }
 
 
