@@ -69,7 +69,6 @@ footer {
 }
 
 
-
 .nav_links {
     background-color: #4e4c4c;
     height: 5vh;
@@ -79,18 +78,20 @@ footer {
     align-items: center;
 }
 
-
 .nav_item > a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.9em;
 }
 
-.nav_item > a:hover, a:active {
+.nav_item > a:hover {
     background-color: rgba(233, 113, 129, 0.8);
     border-radius: 2px;
-    /* padding: 1px; */
+}
+
+a:active {
+    color: black;
 }
 
 /* portfolio CSS */
