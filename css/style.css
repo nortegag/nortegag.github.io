@@ -24,7 +24,7 @@ footer {
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/salar.jpeg');
     -webkit-background-size: cover;
 
-    /* background-color: powderblue; */
+    background-color: rgb(2, 2, 71);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -83,8 +83,14 @@ footer {
 .nav_item > a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 0.9em;
+}
+
+.nav_item > a:hover, a:active {
+    background-color: rgba(233, 113, 129, 0.8);
+    border-radius: 2px;
+    /* padding: 1px; */
 }
 
 /* portfolio CSS */
@@ -253,7 +259,6 @@ label {
     display: flex;
     padding-bottom: 2em;
     filter:sepia(0.5);
-    /* filter:hue-rotate(120) */
     justify-content:center;
 }
 
