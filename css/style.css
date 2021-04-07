@@ -53,10 +53,10 @@ footer {
     border-bottom: solid 3px;
 }
 
-#name > a > p {
+#name > a {
     color: white;
     font-weight: 200;
-    transform:translateY(40px);
+    margin-top: 40px;
     font-size: 0.8em;
     border: solid 1px;
     border-radius: 8px;
@@ -163,10 +163,10 @@ nav ul li a.active_page {
     padding: 10px;
 }
 
+
 *:focus{
-    border-top: 2px dashed pink;
-    border-bottom: 2px dashed pink;
-  }
+    border: 3px solid black;
+}
 
 /* contact page css */
 #contact {
@@ -307,6 +307,11 @@ label {
     top:10px; 
   }
 
+  /* hide buttons when screen is smaller */
+.project-btn {
+    display:none;
+}
+
 /* media query for iPad view */
 @media screen and (min-width: 600px){
     /* make nav menu go to the right, give 'em space */
@@ -345,10 +350,36 @@ label {
     #about {
         height: 125vh;
     }
+
+    /* show buttons inside project text divs in larger screens */
+    .project-btn {
+        display: inline-block;
+    
+        color: black;
+        font-weight: 300;
+        font-size: 0.8em;
+        background-color: rgba(233, 113, 129, 0.8);
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 60px;
+        box-shadow: -3px -3px pink, -2px 2px pink, -1px 1px pink;
+        border: 1px;
+    }
+    
+    .project-btn:hover {
+        font-size: 1.2em;
+        transition: all 2s ease;
+    }
+
 }
 
 @media screen and (prefers-reduced-motion){
     html{
         scroll-behavior: auto; 
+    }
+    /* project buttons have a slight transition, remove */
+    .project-btn:hover {
+        font-size: 0.8em;
+        transition: none;
     }
   }
