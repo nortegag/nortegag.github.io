@@ -371,6 +371,14 @@ label {
         transition: all 2s ease;
     }
 
+    /* make form bit larger for the viewport */
+    label {
+        font-size: 1em;
+    }
+    .btn {
+        font-size: 0.8em;
+    }
+
 }
 
 @media screen and (prefers-reduced-motion){
