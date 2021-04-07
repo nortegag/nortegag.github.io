@@ -385,6 +385,7 @@ label {
     html{
         scroll-behavior: auto; 
     }
+    
     /* project buttons have a slight transition, remove */
     .project-btn:hover {
         font-size: 0.8em;
