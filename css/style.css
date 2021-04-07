@@ -10,10 +10,11 @@ footer {
     background-color: #4e4c4c;
     color: white;
     text-align: center;
-    height: 5vh;
+    height: 50px;
     font-weight: 100;
-    font-size: 11px;
-    padding-top: 2em;
+    font-size: 12pt;
+    line-height: 1.2;
+    padding-top: 1em;
 }
 
 /* home page css */
@@ -70,7 +71,7 @@ footer {
 
 .nav_links {
     background-color: #4e4c4c;
-    height: 5vh;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -80,6 +81,7 @@ footer {
 .nav_item > a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    padding: 5px;
     font-weight: 300;
     font-size: 0.9em;
 }
@@ -93,6 +95,13 @@ a:active {
     color: black;
 }
 
+/* show active link */
+nav ul li a.active_page {
+    background-color:rgba(233, 113, 129, 0.8);
+    border-radius:2px;
+    border: 2px solid white;
+}
+
 /* portfolio CSS */
 .grid {
     display: grid;
@@ -103,24 +112,18 @@ a:active {
     overflow: hidden;
     justify-items: center;
     align-items: center;
-
 }
 
 .grid > div {
     height: 2em;
     /* width: 50vh; */
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 227, 230, 0.7);
     text-align: center;
     padding: 3.5em;
     position: relative;
-    /* width: 1vw; */
-    /* width: 80%; */
-
     border-radius: 8px;
     margin-bottom: 15px;
 }
-
-
 
 
 .grid > div > img {
@@ -160,16 +163,21 @@ a:active {
     padding: 10px;
 }
 
+*:focus{
+    border-top: 2px dashed pink;
+    border-bottom: 2px dashed pink;
+  }
+
 /* contact page css */
+#contact {
+    height: 100vh;
+}
 .form {
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    margin-top: 2em;
 }
 
 .form > div {
@@ -209,19 +217,17 @@ label {
     justify-content:space-evenly; 
     align-items: center;
     max-height: 200px;
-    margin-top: 5px;
+    margin-top: 2em;
 
     background-color: rgb(255, 255, 255, 0.2);
 }
-
 
 .contact-logo > a > img {
     max-width: 3.8em;
     max-height: 160px;
     padding: 1em;
-    filter:brightness(0);
+    filter: invert(100%);
     opacity: 1.0;
-
 }
 
 /* about page css */
@@ -229,12 +235,11 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
-    height: 120vh;
+    height: 180vh;
 }
 
 #about > h1 {
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #bio-text {
@@ -242,15 +247,14 @@ label {
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255, 0.2);
     padding: 10px;
-    margin-top: 200px;
     text-align: center;
     font-size: 0.7em;
-    max-width: 75%;
+    max-width: 50%;
     margin: 0 auto;
+    margin-top: 40px;
     margin-bottom: 40px;
-    line-height: 1.5;
+    line-height: 1.7;
     font-weight: 300;
-
     border: 1px solid;
     border-radius: 8px;
 }
@@ -258,6 +262,7 @@ label {
 .img-container {
     display: flex;
     padding-bottom: 2em;
+    padding-top: 2em;
     filter:sepia(0.5);
     justify-content:center;
 }
@@ -279,9 +284,71 @@ label {
     border-radius: 8px;
     padding: 10px;
     background-color: rgba(233, 113, 129, 0.7);
-
 }
 
 #about > div > a:link {
     text-decoration: none;
 }
+
+/* skip to content CSS */
+.skip a {
+    background: rgb(240, 224, 224);
+    left: 0;
+    padding: 10px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+    font-size: 15px;
+}
+
+.skip a:focus{
+    top:10px; 
+  }
+
+/* media query for iPad view */
+@media screen and (min-width: 600px){
+    /* make nav menu go to the right, give 'em space */
+    .nav_links {
+        justify-content:right;
+    }
+    .nav_links > li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* for index.html */
+    /* make name size a bit bigger */
+    #name > h1{
+        font-size: 2.2em;
+    }
+    #name > h2 {
+        font-size:1.1em;
+    }
+
+    /* for portfolio.html */
+    /* make grid divs wider to fit the screen */
+    .grid > div {
+        width: 20vw;
+        background-color: rgba(255, 227, 230, 0.7);
+    }
+
+    /* for about.html */
+    /* limit width of the text div */
+    #bio-text {
+        max-width: 40vw;
+        font-size: 0.9em;
+    }
+
+    /* about is big in small screens, let's use vh to make it smaller */
+    #about {
+        height: 125vh;
+    }
+}
+
+@media screen and (prefers-reduced-motion){
+    html{
+        scroll-behavior: auto; 
+    }
+  }
