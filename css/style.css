@@ -316,7 +316,7 @@ label {
 @media screen and (min-width: 600px){
     /* make nav menu go to the right, give 'em space */
     .nav_links {
-        justify-content:right;
+        justify-content:flex-end;
     }
     .nav_links > li {
         padding-left: 20px;
