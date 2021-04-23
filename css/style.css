@@ -314,9 +314,9 @@ label {
 
 /* media query for iPad view */
 @media screen and (min-width: 600px){
-    /* make nav menu go to the right, give 'em space */
+    /* make nav menu be spaced evenly, give 'em space */
     .nav_links {
-        justify-content:flex-end;
+        justify-content:space-between;
     }
     .nav_links > li {
         padding-left: 20px;
@@ -380,6 +380,15 @@ label {
     }
 
 }
+
+/* media query for desktop view */
+@media screen and (min-width: 1024px){
+    /* make nav menu go to the right, give 'em space */
+    .nav_links {
+        justify-content:flex-end;
+    }
+    
+
 
 @media screen and (prefers-reduced-motion){
     html{
